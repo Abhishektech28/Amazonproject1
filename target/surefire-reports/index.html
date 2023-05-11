@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,  3 skipped,  2 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,  1 skipped,  4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testClass.LoginTest" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="testClass.LoginTest" class="method navigator-link" hash-for-method="test5">test5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -115,16 +115,6 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content skipped suite-Surefire_suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testClass.LoginTest" class="method navigator-link" hash-for-method="test4">test4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testClass.LoginTest" class="method navigator-link" hash-for-method="test5">test5</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="testClass.LoginTest" class="method navigator-link" hash-for-method="test6">test6</a> <!-- method navigator-link -->
@@ -149,6 +139,16 @@
                         <a href="#" panel-name="suite-Surefire_suite" title="testClass.LoginTest" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="testClass.LoginTest" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="testClass.LoginTest" class="method navigator-link" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
@@ -169,25 +169,33 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test3">
-                  </a> <!-- test3 -->
-                  <span class="method-name">test3</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //li[@data-asin=&apos;B0BV6W7WWW&apos;]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=113.0.5672.92)
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at pomwithPageFactory.Homepage.sizebox(Homepage.java:75)
-	at testClass.LoginTest.test3(LoginTest.java:63)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b097da1655e837f1a2bb9879114b9778, clickElement {id=0A5C0F053838DC317E611E09EB7E2607_element_315}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.92, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ias28\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50735}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50735/devtoo..., se:cdpVersion: 113.0.5672.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b097da1655e837f1a2bb9879114b9778)] -&gt; xpath: //div[@class=&apos;a-radio ma-pdl-safe-location-SECURITY_DESK ma-safe-place-options a-spacing-none&apos;]//input[@name=&apos;preferredDeliveryLocationOTHER&apos;]]
+Session ID: b097da1655e837f1a2bb9879114b9778
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at pomwithPageFactory.Addresspage.Dndcheckbox(Addresspage.java:124)
+	at testClass.LoginTest.test5(LoginTest.java:92)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+... Removed 40 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -201,35 +209,11 @@ Driver info: driver.version: RemoteWebDriver
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test4">
-                  </a> <!-- test4 -->
-                  <span class="method-name">test4</span>
-                  <div class="stack-trace">java.lang.Throwable: Method testClass.LoginTest.test4() on instance testClass.LoginTest@56a6d5a6 depends on not successfully finished methods 
-[testClass.LoginTest.test3() on instance testClass.LoginTest@56a6d5a6]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test5">
-                  </a> <!-- test5 -->
-                  <span class="method-name">test5</span>
-                  <div class="stack-trace">java.lang.Throwable: Method testClass.LoginTest.test5() on instance testClass.LoginTest@56a6d5a6 depends on not successfully finished methods 
-[testClass.LoginTest.test4() on instance testClass.LoginTest@56a6d5a6]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="test6">
                   </a> <!-- test6 -->
                   <span class="method-name">test6</span>
-                  <div class="stack-trace">java.lang.Throwable: Method testClass.LoginTest.test6() on instance testClass.LoginTest@56a6d5a6 depends on not successfully finished methods 
-[testClass.LoginTest.test5() on instance testClass.LoginTest@56a6d5a6]
+                  <div class="stack-trace">java.lang.Throwable: Method testClass.LoginTest.test6() on instance testClass.LoginTest@309e345f depends on not successfully finished methods 
+[testClass.LoginTest.test5() on instance testClass.LoginTest@309e345f]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 23 stack frames
 </div> <!-- stack-trace -->
@@ -255,6 +239,20 @@ Driver info: driver.version: RemoteWebDriver
                   <a name="test2">
                   </a> <!-- test2 -->
                   <span class="method-name">test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -314,32 +312,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test3')
 data.setCell(0, 2, 'testClass.LoginTest')
-data.setCell(0, 3, 31059);
+data.setCell(0, 3, 39469);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test2')
+data.setCell(1, 1, 'test5')
 data.setCell(1, 2, 'testClass.LoginTest')
-data.setCell(1, 3, 2166);
+data.setCell(1, 3, 22733);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test1')
+data.setCell(2, 1, 'test4')
 data.setCell(2, 2, 'testClass.LoginTest')
-data.setCell(2, 3, 70);
+data.setCell(2, 3, 12768);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test5')
+data.setCell(3, 1, 'test2')
 data.setCell(3, 2, 'testClass.LoginTest')
-data.setCell(3, 3, 8);
+data.setCell(3, 3, 2551);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test4')
+data.setCell(4, 1, 'test1')
 data.setCell(4, 2, 'testClass.LoginTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 99);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'test6')
 data.setCell(5, 2, 'testClass.LoginTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 2);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -372,34 +370,30 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">6973 ms</span>
+                <span class="method-start">9767 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test2</span>
-                <span class="method-start">7047 ms</span>
+                <span class="method-start">9876 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">12430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test4</span>
+                <span class="method-start">51904 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test3</span>
-                <span class="method-start">9227 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test4</span>
-                <span class="method-start">40337 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">test5</span>
-                <span class="method-start">40337 ms</span>
+                <span class="method-start">64677 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test6</span>
-                <span class="method-start">40345 ms</span>
+                <span class="method-start">87432 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">40345 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

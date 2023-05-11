@@ -10,7 +10,6 @@
           <include name="test3"/>
           <include name="test6"/>
           <include name="setup"/>
-          <include name="tearDown"/>
           <include name="test5"/>
         </methods>
       </class> <!-- testClass.LoginTest -->
