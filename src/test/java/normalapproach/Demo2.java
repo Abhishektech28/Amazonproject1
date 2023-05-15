@@ -14,7 +14,6 @@ public class Demo2 {
 			driver.manage().window().maximize();
 					
 			driver.get("https://www.opencart.com/");
-			
 			driver.switchTo().newWindow(WindowType.TAB); // OPENS NEW TAB
 			//driver.switchTo().newWindow(WindowType.WINDOW); // OPENS IN ANOTHER WINDOW
 			
